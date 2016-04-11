@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97805A461CB9CF3F00B0E7E4 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97805A451CB9CF3F00B0E7E4 /* DatePickerViewController.swift */; };
+		97805A481CB9CF6C00B0E7E4 /* DoubleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97805A471CB9CF6C00B0E7E4 /* DoubleComponentPickerViewController.swift */; };
+		97805A4A1CB9CF9400B0E7E4 /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97805A491CB9CF9400B0E7E4 /* DependentComponentPickerViewController.swift */; };
+		97805A4C1CB9CFB500B0E7E4 /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97805A4B1CB9CFB500B0E7E4 /* CustomPickerViewController.swift */; };
+		97B5DCA51CBC399500183153 /* SingleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B5DCA41CBC399500183153 /* SingleComponentPickerViewController.swift */; };
 		97D3C9041CB9B80500A26DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D3C9031CB9B80500A26DEC /* AppDelegate.swift */; };
 		97D3C9061CB9B80500A26DEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D3C9051CB9B80500A26DEC /* ViewController.swift */; };
 		97D3C9091CB9B80500A26DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D3C9071CB9B80500A26DEC /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97805A451CB9CF3F00B0E7E4 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		97805A471CB9CF6C00B0E7E4 /* DoubleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleComponentPickerViewController.swift; sourceTree = "<group>"; };
+		97805A491CB9CF9400B0E7E4 /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
+		97805A4B1CB9CFB500B0E7E4 /* CustomPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
+		97B5DCA41CBC399500183153 /* SingleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleComponentPickerViewController.swift; sourceTree = "<group>"; };
 		97D3C9001CB9B80500A26DEC /* pickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D3C9031CB9B80500A26DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97D3C9051CB9B80500A26DEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +70,11 @@
 				97D3C90A1CB9B80500A26DEC /* Assets.xcassets */,
 				97D3C90C1CB9B80500A26DEC /* LaunchScreen.storyboard */,
 				97D3C90F1CB9B80500A26DEC /* Info.plist */,
+				97805A451CB9CF3F00B0E7E4 /* DatePickerViewController.swift */,
+				97805A471CB9CF6C00B0E7E4 /* DoubleComponentPickerViewController.swift */,
+				97805A491CB9CF9400B0E7E4 /* DependentComponentPickerViewController.swift */,
+				97805A4B1CB9CFB500B0E7E4 /* CustomPickerViewController.swift */,
+				97B5DCA41CBC399500183153 /* SingleComponentPickerViewController.swift */,
 			);
 			path = pickers;
 			sourceTree = "<group>";
@@ -137,6 +152,11 @@
 			files = (
 				97D3C9061CB9B80500A26DEC /* ViewController.swift in Sources */,
 				97D3C9041CB9B80500A26DEC /* AppDelegate.swift in Sources */,
+				97805A4A1CB9CF9400B0E7E4 /* DependentComponentPickerViewController.swift in Sources */,
+				97B5DCA51CBC399500183153 /* SingleComponentPickerViewController.swift in Sources */,
+				97805A461CB9CF3F00B0E7E4 /* DatePickerViewController.swift in Sources */,
+				97805A4C1CB9CFB500B0E7E4 /* CustomPickerViewController.swift in Sources */,
+				97805A481CB9CF6C00B0E7E4 /* DoubleComponentPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +308,7 @@
 				97D3C9141CB9B80500A26DEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
