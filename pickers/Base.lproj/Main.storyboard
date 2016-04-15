@@ -131,13 +131,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2m-yj-yWn">
-                                <rect key="frame" x="140" y="33" width="320" height="216"/>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HL-bb-ohg">
                                 <rect key="frame" x="278" y="257" width="44" height="30"/>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="qQ8-bD-Acm" eventType="touchUpInside" id="zGk-Hi-T19"/>
+                                </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2m-yj-yWn">
+                                <rect key="frame" x="140" y="33" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="qQ8-bD-Acm" id="2PD-VW-rzs"/>
+                                    <outlet property="delegate" destination="qQ8-bD-Acm" id="y7X-JB-cKZ"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -148,6 +155,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="NtH-NG-5IY"/>
+                    <connections>
+                        <outlet property="doublePicker" destination="D2m-yj-yWn" id="5GU-KF-5iQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IAr-qu-1nj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
