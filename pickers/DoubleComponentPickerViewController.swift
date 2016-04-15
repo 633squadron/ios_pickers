@@ -8,8 +8,10 @@
 
 import UIKit
 
-class DoubleComponentPickerViewController: UIViewController {
+class DoubleComponentPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet weak var doublePicker: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

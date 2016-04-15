@@ -44,6 +44,7 @@ class SingleComponentPickerViewController: UIViewController, UIPickerViewDelegat
     */
 
     @IBAction func onButtonPressed(sender: AnyObject) {
+        
         let row = singlePicker.selectedRowInComponent(0)
         let selected = characterNames[row]
         let title = "You selected \(selected)"

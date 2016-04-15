@@ -131,17 +131,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeW-Nf-7Re">
-                                <rect key="frame" x="273" y="20" width="55" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2m-yj-yWn">
+                                <rect key="frame" x="140" y="33" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HL-bb-ohg">
+                                <rect key="frame" x="278" y="257" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WeW-Nf-7Re" firstAttribute="centerX" secondItem="Dtf-7W-rTo" secondAttribute="centerX" id="tkb-ME-H0e"/>
-                            <constraint firstItem="WeW-Nf-7Re" firstAttribute="top" secondItem="RHx-pc-aqI" secondAttribute="bottom" id="z4b-XA-otm"/>
+                            <constraint firstItem="6HL-bb-ohg" firstAttribute="top" secondItem="D2m-yj-yWn" secondAttribute="bottom" constant="8" id="8j7-yN-7tA"/>
+                            <constraint firstItem="D2m-yj-yWn" firstAttribute="top" secondItem="RHx-pc-aqI" secondAttribute="bottom" constant="13" id="Lbd-Xg-eM7"/>
+                            <constraint firstItem="D2m-yj-yWn" firstAttribute="centerX" secondItem="Dtf-7W-rTo" secondAttribute="centerX" id="Sxd-mb-UdB"/>
+                            <constraint firstItem="6HL-bb-ohg" firstAttribute="centerX" secondItem="Dtf-7W-rTo" secondAttribute="centerX" id="dzX-4g-HfH"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="NtH-NG-5IY"/>
