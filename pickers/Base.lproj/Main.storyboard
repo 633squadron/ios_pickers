@@ -175,20 +175,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dependent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5u-3U-z9p">
-                                <rect key="frame" x="258" y="20" width="85" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIg-cI-EHN">
+                                <rect key="frame" x="140" y="20" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="QKa-dn-fmj" id="WFn-8W-1PY"/>
+                                    <outlet property="delegate" destination="QKa-dn-fmj" id="JNN-Ct-k66"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYR-el-ihb">
+                                <rect key="frame" x="278" y="244" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="QKa-dn-fmj" eventType="touchUpInside" id="Rmu-5t-46G"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="L5u-3U-z9p" firstAttribute="centerX" secondItem="iBX-lj-RKX" secondAttribute="centerX" id="3t3-jd-xLc"/>
-                            <constraint firstItem="L5u-3U-z9p" firstAttribute="top" secondItem="Sc7-Jt-6nY" secondAttribute="bottom" id="Lun-lT-fQ9"/>
+                            <constraint firstItem="UYR-el-ihb" firstAttribute="top" secondItem="yIg-cI-EHN" secondAttribute="bottom" constant="8" id="7SX-w4-FUN"/>
+                            <constraint firstItem="UYR-el-ihb" firstAttribute="centerX" secondItem="iBX-lj-RKX" secondAttribute="centerX" id="AiG-SM-aKd"/>
+                            <constraint firstItem="yIg-cI-EHN" firstAttribute="top" secondItem="Sc7-Jt-6nY" secondAttribute="bottom" id="bva-GC-jaB"/>
+                            <constraint firstItem="yIg-cI-EHN" firstAttribute="centerX" secondItem="iBX-lj-RKX" secondAttribute="centerX" id="toL-Zb-1W1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="0Oq-C3-8ed"/>
+                    <connections>
+                        <outlet property="dependentPicker" destination="yIg-cI-EHN" id="ZsS-E4-k3w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ah4-Ri-SWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
