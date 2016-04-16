@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9703D6D51CC2FB80007BD2F2 /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9703D6D41CC2FB80007BD2F2 /* statedictionary.plist */; };
 		97805A461CB9CF3F00B0E7E4 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97805A451CB9CF3F00B0E7E4 /* DatePickerViewController.swift */; };
 		97805A481CB9CF6C00B0E7E4 /* DoubleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97805A471CB9CF6C00B0E7E4 /* DoubleComponentPickerViewController.swift */; };
 		97805A4A1CB9CF9400B0E7E4 /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97805A491CB9CF9400B0E7E4 /* DependentComponentPickerViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9703D6D41CC2FB80007BD2F2 /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
 		97805A451CB9CF3F00B0E7E4 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		97805A471CB9CF6C00B0E7E4 /* DoubleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleComponentPickerViewController.swift; sourceTree = "<group>"; };
 		97805A491CB9CF9400B0E7E4 /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			children = (
 				97D3C9031CB9B80500A26DEC /* AppDelegate.swift */,
 				97D3C9051CB9B80500A26DEC /* ViewController.swift */,
+				9703D6D41CC2FB80007BD2F2 /* statedictionary.plist */,
 				97D3C9071CB9B80500A26DEC /* Main.storyboard */,
 				97D3C90A1CB9B80500A26DEC /* Assets.xcassets */,
 				97D3C90C1CB9B80500A26DEC /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				97D3C90E1CB9B80500A26DEC /* LaunchScreen.storyboard in Resources */,
 				97D3C90B1CB9B80500A26DEC /* Assets.xcassets in Resources */,
+				9703D6D51CC2FB80007BD2F2 /* statedictionary.plist in Resources */,
 				97D3C9091CB9B80500A26DEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
