@@ -24,7 +24,7 @@ class DependentComponentPickerViewController: UIViewController, UIPickerViewDele
         // Do any additional setup after loading the view.
         
         let bundle = NSBundle.mainBundle()
-        let plistURL = bundle.URLForResource("stateDictionary", withExtension: "plist")
+        let plistURL = bundle.URLForResource("statedictionary", withExtension: "plist")
         
         stateZips = NSDictionary(contentsOfURL: plistURL!) as! [String: [String]]
         let allStates = stateZips.keys
@@ -97,6 +97,15 @@ class DependentComponentPickerViewController: UIViewController, UIPickerViewDele
             zips = stateZips[selectedState]
             dependentPicker.reloadComponent(zipComponent)
             dependentPicker.selectRow(0, inComponent: zipComponent, animated: true)
+        }
+    }
+    
+    func pickerView(pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+        let pickerWidth = pickerView.bounds.size.width
+        if component == zipComponent {
+            return pickerWidth / 3
+        } else {
+            return 2 * pickerWidth / 3
         }
     }
     
